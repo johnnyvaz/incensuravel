@@ -1,17 +1,32 @@
-
-
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 2rem 4rem 0.8rem 4rem;
-	gap: 2rem;
-	margin-bottom: 4rem;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 4rem 0.8rem 4rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
 
-.alchemy_logo{
-	width: 6rem;
-	cursor: pointer;
+.alchemy_logo {
+    background: linear-gradient(270deg, #6658ff, #ba68c8);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient 4s ease infinite;
+    font-size: 28px;
+    font-weight: bold;
 }
