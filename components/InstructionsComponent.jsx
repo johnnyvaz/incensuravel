@@ -1,80 +1,53 @@
+import React from 'react';
 import styles from "../styles/InstructionsComponent.module.css";
-import Router, { useRouter } from "next/router";
-export default function InstructionsComponent() {
-	const router = useRouter();
-	return (
-		<div className={styles.container}>
-			<header className={styles.header_container}>
-				<h1>
-					create<span>-web3-dapp</span>
-				</h1>
-				<p>
-					Get started by editing this page in{" "}
-					<span>/pages/index.js</span>
-				</p>
-			</header>
 
-			<div className={styles.buttons_container}>
-				<a
-					target={"_blank"}
-					href={"https://createweb3dapp.alchemy.com/#components"}
-				>
-					<div className={styles.button}>
-						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Add Components</p>
-					</div>
-				</a>
-				<a
-					target={"_blank"}
-					href={"https://createweb3dapp.alchemy.com/#templates"}
-				>
-					<div className={styles.button}>
-						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
-						<p>Explore Templates</p>
-					</div>
-				</a>
-				<a
-					target={"_blank"}
-					href={"https://docs.alchemy.com/docs/create-web3-dapp"}
-				>
-					<div className={styles.button}>
-						<img
-							src="https://static.alchemyapi.io/images/cw3d/Icon%20Large/file-eye-01-l.svg"
-							width={"20px"}
-							height={"20px"}
-						/>
-						<p>Visit Docs</p>
-					</div>
-				</a>
-			</div>
-			<div className={styles.footer}>
-				<a href="https://alchemy.com/?a=create-web3-dapp" target={"_blank"}>
-					<img
-						id="badge-button"
-						style={{ width: "240px", height: "53px" }}
-						src="https://static.alchemyapi.io/images/marketing/badgeLight.png"
-						alt="Alchemy Supercharged"
-					/>
-				</a>
-				<div className={styles.icons_container}>
-					<div>
-						<a
-							href="https://github.com/alchemyplatform/create-web3-dapp"
-							target={"_blank"}
-						>
-							Leave a star on Github
-						</a>
-					</div>
-					<div>
-						<a
-							href="https://twitter.com/AlchemyPlatform"
-							target={"_blank"}
-						>
-							Follow us on Twitter
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+export default function InstructionsComponent() {
+    return (
+        <div className={styles.container}>
+            <header className={styles.header_container}>
+                <h1>
+                    <span>Incensurável</span> - Seu Perfil Web3
+                </h1>
+                <p>
+                    Controle total sobre sua identidade digital com tecnologia blockchain.
+                </p>
+            </header>
+
+            <div className={styles.cards_container}>
+                <div className={styles.card}>
+                    <h2 className={styles.title}>Recursos do Perfil</h2>
+                    <p className={styles.text}>
+                        Identidade Digital Única e Descentralizada, Integração com Múltiplas Redes Sociais,
+                        Armazenamento Seguro e Imutável com Tecnologia Blockchain, Controle Total sobre a
+                        Privacidade e Acesso aos Dados.
+                    </p>
+                </div>
+                <div className={styles.card}>
+                    <h2 className={styles.title}>Como Funciona</h2>
+                    <p className={styles.text}>
+                        Registre-se e crie sua identidade digital utilizando sua carteira cripto. Conecte e
+                        sincronize suas contas de redes sociais ao seu perfil descentralizado. Aproveite a
+                        liberdade e segurança sem precedentes, com controle total sobre seus dados.
+                    </p>
+                </div>
+                <div className={styles.card}>
+                    <h2 className={styles.title}>Comece Agora</h2>
+                    <p className={styles.text}>
+                        Pronto para assumir o controle da sua identidade online? Crie seu perfil descentralizado
+                        hoje mesmo e defina um novo padrão de liberdade na internet.
+                    </p>
+                </div>
+            </div>
+
+            <div className={styles.footer}>
+                <div className={styles.icons_container}>
+                    <div>
+                        <a href="https://johnnyvaz.com.br" target={"_blank"}>
+                            Contato: Johnny Vaz
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
